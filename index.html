@@ -385,9 +385,7 @@ function recalc(){
   }
   const diff = fim - ini;
   if(diff < 0){
-    rT.textContent='erro'; rT.className='rv err';
     rD.textContent='—'; rD.className='rv muted sm';
-    sub.textContent='Pouso não pode ser menor que decolagem.';
     sub.style.color='var(--danger)'; calcFuel(); return;
   }
   const totalMin = Math.round(diff*60);
